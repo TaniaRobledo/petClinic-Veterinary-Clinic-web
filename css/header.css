@@ -1,0 +1,21 @@
+/* STYLES FOR HEADER AND HEADER´S SONS */
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid red ;
+}
+.header__logo{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__blue{
+    color: blue;
+}
+.header__red{
+    color: red;
+}

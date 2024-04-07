@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetGuardian</title>
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- OTHERS CSS -->
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="shortcut icon" href="./assets/images/index/favicon.jpg" type="image/x-icon">
+  <!-- CSS MIN ONLINE SOURCE -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- FONT-AWESOME REMOTE LIBRARY -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="own-container center-column row">
+    <header id="header" class="header row">
+      <div class="nav-fixed  row col-12"><!--TODO añadir esta clase para hacerlo fixed => position-fixed top-0 -->
+
+        <!-- nav container -->
+        <!-- logo -->
+        <div class="header__logo col-2">
+          <img class="header__image" src="./assets/images/index/logo1.png" alt="logo">
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary border col-10 ">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Start</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Equipemnt</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Traumatology</a></li>
+                    <li><a class="dropdown-item" href="#">Surgeries</a></li>
+                    <li><a class="dropdown-item" href="#">Oncología</a></li>
+                    <li><a class="dropdown-item" href="#">Feline medicine</a></li>
+                    <li><a class="dropdown-item" href="#">Exotics</a></li>
+                    <li><a class="dropdown-item" href="#">Rehabilitation</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- end nav contaienr -->
+      <!-- slider header images -->
+      <div id="carouselExampleAutoplaying" class="carousel col-8  slide d-none d-lg-block header__visor mt-2"
+        data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/index/slide-1.jpg" class="d-block w-100" alt="slider-1">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/index/slide-2.jpg" class="d-block w-100" alt="slider-2">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/index/slide-3.jpg" class="d-block w-100" alt="slider-3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- end slider header images -->
+    </header>
+    <main class="main border row">
+      <!-- <div class="row row-cols-1 row-cols-md-3 g-4"> -->
+      <div class="row col-12 g-4 d-flex justify-content-center">
+        <!-- card 1 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="card h-100 d-flex flex-column align-items-center p-4 ">
+            <img src="/assets/images/index/clinic.png" class="card-img-top rounded-circle w-50" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center p-2">About us</h5>
+              <p class="card-text text-justify">
+                At PetClinic in Talavera de la Reina, we specialize in providing advanced care for pets and exotic
+                animals. Our veterinary center is equipped with state-of-the-art technology.</p>
+            </div>
+            <!-- card 1 footer -->
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <!-- card 1 -->
+
+        <!-- card 2 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="card h-100 d-flex flex-column align-items-center p-4  ">
+            <img src="/assets/images/index/clinic.png" class="card-img-top rounded-circle w-50" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Emergencies</h5>
+              <p class="card-text text-justify">
+                We are available 24 hours a day, 365 days a year, to provide immediate attention to your pet in any
+                emergency. We have an emergency phone line.</p>
+            </div>
+            <!-- card 2 footer -->
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 end-->
+
+        <!-- card 3 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="card h-100 d-flex flex-column align-items-center p-4  ">
+            <img src="/assets/images/index/clinic.png" class="card-img-top rounded-circle w-50" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Specialists</h5>
+              <p class="card-text text-justify">We specialize in traumatology, ophthalmology, oncology, feline medicine,
+                anesthesia, and care for small exotic mammals.</p>
+            </div>
+            <!-- card 3 footer -->
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 end -->
+
+        <!-- card 4 -->
+        <div class="col-md-6 col-lg-12 col-xl-3 p-2">
+          <div class="card h-100 d-flex flex-column align-items-center p-4  ">
+            <img src="/assets/images/index/clinic.png"
+              class="card-img-top rounded-circle w-50 d-block d-lg-none d-xl-block" alt="...">
+            <img src="./assets/images/index/cards4.png" class="card-img-top d-none d-lg-block d-xl-none" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Equipment</h5>
+              <p class="card-text text-justify">Our team of veterinarians is not only young and energetic, but also
+                highly specialized and committed to providing the best possible service for your pet</p>
+            </div>
+            <!-- card 4 footer -->
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card 4 end -->
+
+      <!-- cita previa -->
+           <!-- subsides -->
+           <div class="subsidies row col-12 justify-content-between align-items-center p-6 mt-5">
+              <!-- subsides image -->
+              <div class="vet col-7">
+                <img class="image" src="https://nfnatcane.es/blog/wp-content/uploads/2021/11/veterinaria-revisando-a-un-perro.jpg" alt="subvenciones">
+              </div>
+
+            <!-- subsides text -->
+            <div class="appointment justify-content-center align-items-center text-justify col-5">
+              <p class="text__appoiment ">
+                <p>Appoiment</p>
+                <p>  Tel: 925 741 542</p>
+                <p> Urgency: 24 hours</p>
+                <p> Movile: 689 412 536</p>
+                <p> In collaboration with other clinics</p>
+              </p>
+    
+            </div>
+    
+          
+    
+    
+          </div>
+
+      <!-- subsides -->
+      <div class="subsidies row justify-content-between align-items-center p-6">
+        <!-- subsides text -->
+        <div class="subsides__text col-lg-7">
+          <p class="text-justify">Talavera Veterinaria Pet Clinic, is a veterinary clinic in Talavera de la Reina,
+            specializing in companion
+            animals.</p>
+
+
+
+          <p class="title"> OBJECT OF THE INVESTMENT PROJECT.-</p>
+          <p class="text-justify"> The project has consisted of the acquisition of machinery to modernize and update the
+            clinic, increasing
+            the
+            services provided. The subsidized investments have been allocated to the purchase of equipment for the
+            arrest
+            and diagnosis of diseases.</p>
+
+
+
+
+          <p class="title">RESULTS</p>
+          <p class="text-justify">Thanks to the co-financing of the Regional Government of Castilla la Mancha, as well
+            as the European Union
+            through ERDF, it has been possible to improve the services provided and improve the health of pets through
+            ERDF, it has been possible to improve the services provided and improve the health of pets.</p>
+
+        </div>
+
+        <!-- subsides image -->
+        <div class="subsidies__image col-lg-5">
+          <img class="image" src="./assets/images/index/subvenciones.png" alt="subvenciones">
+        </div>
+
+
+      </div>
+      <!-- subsides end -->
+
+    
+    </main>
+    <footer class="footer-container ">
+        <!-- image dog -->
+        <div class="dog  row col-6 mt-4 justify-content-center align-items-center" >
+          <img src="./assets/images/index/dog.png" alt="dog">
+        </div>
+        <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+          <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+            <div class="row">
+              <div class="col-lg-3 mb-3">
+                <img src="./assets/images/index/logo.png" alt="">
+                <ul class="list-unstyled small">
+                  <li class="mb-2">xplore more about us and stay connected with our updates.</li>
+                 
+                </ul>
+              </div>
+              <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><a href="/">Home</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/">About us</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/examples/">Gallery</a></li>
+                  <li class="mb-2"><a href="https://icons.getbootstrap.com/">Customer texts</a></li>
+                  <li class="mb-2"><a href="https://themes.getbootstrap.com/">Online store</a></li>
+
+                </ul>
+              </div>
+              <div class="col-6 col-lg-2 mb-3">
+                <h5>Guides</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><a href="/">Home</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/">About us</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/examples/">Gallery</a></li>
+                  <li class="mb-2"><a href="https://icons.getbootstrap.com/">Customer texts</a></li>
+                  <li class="mb-2"><a href="https://themes.getbootstrap.com/">Online store</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-lg-2 mb-3">
+                <h5>Projects</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><a href="/">Home</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/">About us</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/examples/">Gallery</a></li>
+                  <li class="mb-2"><a href="https://icons.getbootstrap.com/">Customer texts</a></li>
+                  <li class="mb-2"><a href="https://themes.getbootstrap.com/">Online store</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-lg-2 mb-3">
+                <h5>Community</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><a href="/">Home</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/">About us</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/examples/">Gallery</a></li>
+                  <li class="mb-2"><a href="https://icons.getbootstrap.com/">Customer texts</a></li>
+                  <li class="mb-2"><a href="https://themes.getbootstrap.com/">Online store</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </footer>
+  </div>
+  <!-- BOOTSTRAP JS FILE -->
+  <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <!-- OTHER JS FILES -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
