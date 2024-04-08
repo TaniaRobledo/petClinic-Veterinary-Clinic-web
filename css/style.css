@@ -15,83 +15,22 @@ body{
     margin: 0 auto;
     width: 100%;
     max-width: 1400px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 
-.header__logo{
-    /* border: 4px solid red; */
-    width: 30%;
-}
-
-.header__image{
-    /* border: 4px solid red; */
-    width: 100%;
-}
-
-
-.nav-fixed{
-    z-index: 100;
-}
-
-.main{
-    width: 100%;
-    /* height: 1200px; */
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    /* justify-content: center; */
-}
-.caja{
+/* .caja{
     width: 400px;
-    height: 390px;
+    height: 390px; */
     /* border: 1px solid red; */
     /* display: flex;
     justify-content: center;
     align-items: center; */
-}
+/* } */
 
-.subsidies{
 
-    display: flex;
-    /* border: 2px solid purple; */
-
-}
-
-.subsidies__text{
-    width: 40%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.title{
-    padding: 0;
-    margin: 0;
-}
-
-.subsidies__image{
-    width: 50%;
-    padding: 10px;
-}
-
-.image{
-    width: 100%;
-    height: 100%;
-}
-
-.appointment{
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 /* esta clase da centrado en fila */
-.center-row{
+/* .center-row{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,6 +40,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
 

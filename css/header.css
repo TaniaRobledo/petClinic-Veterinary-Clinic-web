@@ -13,9 +13,15 @@
     align-items: center;
 }
 
+
 .header__blue{
     color: blue;
 }
 .header__red{
     color: red;
+}
+
+/*NAV*/
+.nav-fixed{
+    z-index: 100;
 }

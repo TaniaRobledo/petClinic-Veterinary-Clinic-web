@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetGuardian</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- OTHERS CSS -->
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="shortcut icon" href="./assets/images/index/favicon.jpg" type="image/x-icon">
+    <!-- CSS MIN ONLINE SOURCE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- FONT-AWESOME REMOTE LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- container -->
+    <div class="own-container center-column row">
+        <!-- HEADER -->
+        <header id="header" class="header row">
+            <div class="nav-fixed  row col-12"><!--TODO añadir esta clase para hacerlo fixed => position-fixed top-0 -->
+                <!-- nav container -->
+                <!-- logo -->
+                <div class="header__logo col-2">
+                    <img class="header__image" src="../assets/images/index/logo1.png" alt="logo">
+                </div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Navbar</a>
+                      <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Start</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/equipment.html">Equipemnt</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Traumatology</a></li>
+                                    <li><a class="dropdown-item" href="#">Surgeries</a></li>
+                                    <li><a class="dropdown-item" href="#">Oncología</a></li>
+                                    <li><a class="dropdown-item" href="#">Feline medicine</a></li>
+                                    <li><a class="dropdown-item" href="#">Exotics</a></li>
+                                    <li><a class="dropdown-item" href="#">Rehabilitation</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+             
+            </div>
+            <!-- end nav contaienr -->
+            <!-- ACORDEON -->
+            <section class="equipment row d-flex justify-content-center align-items-center gap-5 p-5">
+                <!-- VETERINARY ONE -->
+                <article class="col-12 d-flex justify-content-around align-items-center row">
+                <div class="veterinary col-lg-6 d-flex justify-content-center">
+                    <img class="veterinary__image w-75" src="../assets/images/equipment/veterinario1.jpg" alt="">
+                </div>
+                <div class="accordion col-lg-6 mb-3" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Liam Thompson
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Veterinary assistant and
+                                    laboratory technician</strong> from the San Fernando Training Institute. His ongoing
+                                training leads him to study several courses on fluid therapy, transfusions, anesthesia,
+                                exotic animals, and rehabilitation.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Functions
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Responsible for the clinic's laboratory, assisting in consultations and emergencies.
+                                A key member of our team. Attentive and always ready to facilitate the stay of clients
+                                and our patients during their visits to the clinic.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Training
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Veterinary laboratory courses cover topics such as diagnostic techniques, sample
+                                analysis, and laboratory safety protocols. These courses provide veterinarians with
+                                essential skills for conducting various tests and examinations to aid in diagnosing
+                                and treating animal illnesses.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+                <!-- VETERINARY TWO -->
+                <article class="col-12 d-flex flex-row-reverse justify-content-around align-items-center row">
+                <div class="veterinary col-lg-6 d-flex justify-content-end">
+                    <img  class="veterinary__image w-75 me -lg-6" src="../assets/images/equipment/veterinario1.jpg" alt="">
+                </div>
+                <div class="accordion col-lg-6" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Liam Thompson
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Veterinary assistant and
+                                    laboratory technician</strong> from the San Fernando Training Institute. His ongoing
+                                training leads him to study several courses on fluid therapy, transfusions, anesthesia,
+                                exotic animals, and rehabilitation.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Functions
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Responsible for the clinic's laboratory, assisting in consultations and emergencies.
+                                A key member of our team. Attentive and always ready to facilitate the stay of clients
+                                and our patients during their visits to the clinic.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Training
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Veterinary laboratory courses cover topics such as diagnostic techniques, sample
+                                analysis, and laboratory safety protocols. These courses provide veterinarians with
+                                essential skills for conducting various tests and examinations to aid in diagnosing
+                                and treating animal illnesses.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+                <!-- VETERINARY THREE -->
+                <article class="col-12 d-flex justify-content-around align-items-center row">
+                <div class="veterinary col-lg-6 d-flex justify-content-center">
+                    <img class="veterinary__image w-75" src="../assets/images/equipment/veterinario1.jpg" alt="">
+                </div>
+                <div class="accordion col-lg-6" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Liam Thompson
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Veterinary assistant and
+                                    laboratory technician</strong> from the San Fernando Training Institute. His ongoing
+                                training leads him to study several courses on fluid therapy, transfusions, anesthesia,
+                                exotic animals, and rehabilitation.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Functions
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Responsible for the clinic's laboratory, assisting in consultations and emergencies.
+                                A key member of our team. Attentive and always ready to facilitate the stay of clients
+                                and our patients during their visits to the clinic.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Training
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Veterinary laboratory courses cover topics such as diagnostic techniques, sample
+                                analysis, and laboratory safety protocols. These courses provide veterinarians with
+                                essential skills for conducting various tests and examinations to aid in diagnosing
+                                and treating animal illnesses.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- VETERINARY FOUR -->
+             <article class="col-12 d-flex flex-row-reverse justify-content-around align-items-center row">
+                <div class="veterinary col-lg-6 d-flex justify-content-center">
+                    <img  class="veterinary__image w-75 me -lg-6" src="../assets/images/equipment/veterinario1.jpg" alt="">
+                </div>
+                <div class="accordion col-lg-6" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Liam Thompson
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Veterinary assistant and
+                                    laboratory technician</strong> from the San Fernando Training Institute. His ongoing
+                                training leads him to study several courses on fluid therapy, transfusions, anesthesia,
+                                exotic animals, and rehabilitation.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Functions
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Responsible for the clinic's laboratory, assisting in consultations and emergencies.
+                                A key member of our team. Attentive and always ready to facilitate the stay of clients
+                                and our patients during their visits to the clinic.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Training
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Veterinary laboratory courses cover topics such as diagnostic techniques, sample
+                                analysis, and laboratory safety protocols. These courses provide veterinarians with
+                                essential skills for conducting various tests and examinations to aid in diagnosing
+                                and treating animal illnesses.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            </section>
+            <!-- end section -->
+
+            <footer class="footer-container ">
+                <!-- image dog -->
+                <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+                  <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+                    <div class="row">
+                      <div class="col-lg-3 mb-3">
+                        <img src="../assets/images/index/logo.png" alt="">
+                        <ul class="list-unstyled small">
+                          <li class="mb-2">xplore more about us and stay connected with our updates.</li>
+                         
+                        </ul>
+                      </div>
+                      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                          <li class="mb-2"><a href="/">Home</a></li>
+                          <li class="mb-2"><a href="/docs/5.3/">About us</a></li>
+                          <li class="mb-2"><a href="/docs/5.3/examples/">Gallery</a></li>
+                          <li class="mb-2"><a href="https://icons.getbootstrap.com/">Customer texts</a></li>
+                          <li class="mb-2"><a href="https://themes.getbootstrap.com/">Online store</a></li>
+        
+                        </ul>
+                      </div>
+                      <div class="col-6 col-lg-2 mb-3">
+                        <h5>Guides</h5>
+                        <ul class="list-unstyled">
+                          <li class="mb-2"><a href="/">Home</a></li>
+                          <li class="mb-2"><a href="/docs/5.3/">About us</a></li>
+                          <li class="mb-2"><a href="/docs/5.3/examples/">Gallery</a></li>
+                          <li class="mb-2"><a href="https://icons.getbootstrap.com/">Customer texts</a></li>
+                          <li class="mb-2"><a href="https://themes.getbootstrap.com/">Online store</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-6 col-lg-2 mb-3">
+                        <h5>Projects</h5>
+                        <ul class="list-unstyled">
+                          <li class="mb-2"><a href="/">Home</a></li>
+                          <li class="mb-2"><a href="/docs/5.3/">About us</a></li>
+                          <li class="mb-2"><a href="/docs/5.3/examples/">Gallery</a></li>
+                          <li class="mb-2"><a href="https://icons.getbootstrap.com/">Customer texts</a></li>
+                          <li class="mb-2"><a href="https://themes.getbootstrap.com/">Online store</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-6 col-lg-2 mb-3">
+                        <h5>Community</h5>
+                        <ul class="list-unstyled">
+                          <li class="mb-2"><a href="/">Home</a></li>
+                          <li class="mb-2"><a href="/docs/5.3/">About us</a></li>
+                          <li class="mb-2"><a href="/docs/5.3/examples/">Gallery</a></li>
+                          <li class="mb-2"><a href="https://icons.getbootstrap.com/">Customer texts</a></li>
+                          <li class="mb-2"><a href="https://themes.getbootstrap.com/">Online store</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+            </footer>
+            <!-- container -->
+    </div>
+    <!-- BOOTSTRAP JS FILE -->
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- OTHER JS FILES -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
